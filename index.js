@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
-const dotenv = require("env").config();
-const port = 3000;
+const dotenv = require("dotenv").config();
+const port = process.env.PORT || 1000;
+
 
 app.use(express.json())
-app.use("/api/users",require("./routers/category"))
+app.use("/api/products",require("./routers/products"))
 app.listen(port,()=>{
     console.log(
         `port is running in ${port}`
