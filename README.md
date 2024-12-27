@@ -22,7 +22,7 @@
 
  
 `Error: listen EADDRINUSE: address already in use`: 
-npx kill-port <portno>
+npx kill-port (portno)
 
 ## **Start the Server**
 
